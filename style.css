@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
 body {
   font-family: "Kumbh Sans", sans-serif;
   max-width: 1000px;
@@ -8,18 +9,33 @@ body {
   color: hsl(220, 13%, 13%);
   font-size: 16px;
 }
+
 p {
   font-size: 16px;
   line-height: 1.5;
   color: hsl(219, 9%, 45%);
 }
+
+.hover_img:hover {
+  border-radius: 9px;
+  opacity: 0.5;
+  border: 2px solid orangered
+}
+
 header {
   display: flex;
   justify-content: space-between;
 }
+
 .main-text_box {
   margin: 13px 0 0 35px;
   padding: 30px;
+}
+
+button {
+  border: none;
+  color: none;
+  background-color: none;
 }
 
 nav ul {
@@ -28,9 +44,11 @@ nav ul {
   padding: 0;
   margin: 0;
 }
+
 * {
   box-sizing: border-box;
 }
+
 li a {
   text-decoration: none;
   display: block;
@@ -39,21 +57,25 @@ li a {
   margin: 0;
   color: hsl(219, 9%, 45%);
 }
+
 li a:hover {
   background-color: hsl(26, 100%, 55%);
   color: white;
   border-radius: 5px;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
   /* border: 1px solid black; */
   width: 650px;
 }
+
 article {
   display: flex;
   padding: 30px;
 }
+
 .add-or-minus_0 {
   padding: 12px 10px;
   width: 124px;
@@ -62,6 +84,7 @@ article {
   background-color: hsl(223, 64%, 98%);
   border-radius: 6px;
 }
+
 .last-button-with_class {
   background-color: orange;
   border-radius: 8px;

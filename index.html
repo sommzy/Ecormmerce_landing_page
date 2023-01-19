@@ -1,156 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Frontend Mentor | E-commerce product page</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="image-product-1.jpg" />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <img
-          src="logo.svg"
-          width="140"
-          height="20"
-          style="margin-top: 8px"
-          alt=""
-        />
-        <ul>
-          <li><a href=""> Collections</a></li>
-          <li><a href="">Men</a></li>
-          <li><a href="">Women</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-      </nav>
-      <div>
-        <img
-          src="icon-cart.svg"
-          height="17"
-          style="margin-right: 25px; margin-bottom: 10px"
-          width="17"
-          alt=""
-        />
-        <img
-          src="image-avatar.png"
-          alt=""
-          height="40"
-          width="40"
-        />
-      </div>
-    </header>
-    <br />
-    <hr />
-    <br /><br />
-    <article>
-      <div>
-        <img
-          src="image-product-1.jpg"
-          width="360"
-          height="380"
-          style="border-radius: 15px"
-          alt=""
-        />
-        <br /><br /><img
-          style="border-radius: 9px; opacity: 0.5; border: 2px solid orangered"
-          width="77"
-          height="77"
-          src="image-product-1-thumbnail.jpg"
-          alt=""
-        />&nbsp;&nbsp;&nbsp;&nbsp;<img
-          width="77"
-          style="border-radius: 9px"
-          height="77"
-          src="image-product-2-thumbnail.jpg"
-          alt=""
-        />&nbsp;&nbsp;&nbsp;&nbsp;<img
-          width="77"
-          style="border-radius: 9px"
-          height="77"
-          src="image-product-3-thumbnail.jpg"
-          alt=""
-        />&nbsp;&nbsp;&nbsp;&nbsp;<img
-          width="77"
-          style="border-radius: 9px"
-          height="77"
-          src="image-product-4-thumbnail.jpg"
-          alt=""
-        />
-      </div>
-      <div class="main-text_box">
-        <span
-          style="
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="image-product-1.jpg" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <img src="logo.svg" width="140" height="20" style="margin-top: 8px" alt="" />
+      <ul>
+        <li><a href=""> Collections</a></li>
+        <li><a href="">Men</a></li>
+        <li><a href="">Women</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+    <div>
+      <img src="icon-cart.svg" height="17" style="margin-right: 25px; margin-bottom: 10px" width="17" alt="" />
+      <img src="image-avatar.png" alt="" height="40" width="40" />
+    </div>
+  </header>
+  <br />
+  <hr />
+  <br /><br />
+  <article>
+    <div>
+      <img src="image-product-1.jpg" width="360" id="myimage" height="380" style="border-radius: 15px"
+        alt="image-product-1" />
+      <br /><br /><button onclick="document.getElementById('myimage').src='image-product-1.jpg'"><img width="74"
+          style="border-radius: 9px" height="74" src="image-product-1-thumbnail.jpg" alt="image"
+          class="hover_img" /></button>&nbsp;&nbsp;&nbsp;<button
+        onclick="document.getElementById('myimage').src='image-product-2.jpg'"><img width="74" class="hover_img"
+          style="border-radius: 9px" height="74" src="image-product-2-thumbnail.jpg"
+          alt="" /></button>&nbsp;&nbsp;&nbsp;<button
+        onclick="document.getElementById('myimage').src='image-product-3.jpg'"><img width="74" class="hover_img"
+          style="border-radius: 9px" height="74" src="image-product-3-thumbnail.jpg"
+          alt="image-product-3-thumbnail" /></button>&nbsp;&nbsp;&nbsp;<button
+        onclick="document.getElementById('myimage').src='image-product-4.jpg'"><img width="74" class="hover_img"
+          style="border-radius: 9px" height="74" src="image-product-4-thumbnail.jpg" alt="" /></button>
+    </div>
+    <div class="main-text_box">
+      <span style="
             font-weight: bold;
             color: orange;
             text-transform: uppercase;
             letter-spacing: 2px;
             font-size: 10px;
-          "
-          >Sneaker Company</span
-        ><br /><br /><span style="font-size: 40px; font-weight: bold">
-          Fall Limited Edition <br />
-          Sneakers</span
-        >
-        <p>
-          These low-profile sneakers are your perfect casual wear <br />
-          companion. Featuring a durable rubber outer sole, they’ll <br />
-          withstand everything the weather can offer.
-        </p>
-        <span style="font-weight: bold; font-size: 25px"> $125.00</span
-        >&nbsp;&nbsp;&nbsp;<span
-          style="
+          ">Sneaker Company</span><br /><br /><span style="font-size: 40px; font-weight: bold">
+        Fall Limited Edition <br />
+        Sneakers</span>
+      <p>
+        These low-profile sneakers are your perfect casual wear <br />
+        companion. Featuring a durable rubber outer sole, they’ll <br />
+        withstand everything the weather can offer.
+      </p>
+      <span style="font-weight: bold; font-size: 25px"> $125.00</span>&nbsp;&nbsp;&nbsp;<span style="
             font-weight: bold;
             color: orange;
             border: none;
             background-color: hsl(25, 100%, 94%);
             padding: 4px 7px;
             border-radius: 5px;
-          "
-          >50%</span
-        ><br /><span
-          style="
+          ">50%</span><br /><span style="
             text-decoration: line-through;
             font-size: 13px;
             color: hsl(220, 14%, 75%);
             font-weight: bold;
-          "
-          >$250.00</span
-        ><br /><br />
-        <div style="display: flex">
-          <div class="add-or-minus_0">
-            <img
-              height="3"
-              width="10"
-              style="margin-top: 7px"
-              src="icon-minus.svg"
-              alt=""
-            />
-            <span style="font-weight: bold">0</span
-            ><img
-              style="margin-top: 4px"
-              height="10"
-              width="10"
-              src="icon-plus.svg"
-              alt=""
-            />
-          </div>
-          &nbsp;&nbsp;&nbsp;
-          <div>
-            <a href="#" class="last-button-with_class"
-              ><img
-                src="icon-cart.svg"
-                height="14"
-                width="14"
-                style="margin-top: 13px"
-                alt="icon-cart"
-              />&nbsp;&nbsp;&nbsp;Add to cart</a
-            >
-          </div>
+          ">$250.00</span><br /><br />
+      <div style="display: flex">
+        <div class="add-or-minus_0">
+          <img height="3" width="10" style="margin-top: 7px" src="icon-minus.svg" alt="" />
+          <span style="font-weight: bold">0</span><img style="margin-top: 4px" height="10" width="10"
+            src="icon-plus.svg" alt="" />
+        </div>
+        &nbsp;&nbsp;&nbsp;
+        <div>
+          <a href="#" class="last-button-with_class"><img src="icon-cart.svg" height="14" width="14"
+              style="margin-top: 13px" alt="icon-cart" />&nbsp;&nbsp;&nbsp;Add to cart</a>
         </div>
       </div>
-    </article>
-  </body>
+    </div>
+  </article>
+</body>
+
 </html>
